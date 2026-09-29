@@ -454,10 +454,11 @@ sub _TicketUpdate {
     $Param->{GetParam}->{'X-OTOBO-FollowUp-SenderType'}  = $Self->{Config}->{SenderType};
     $Param->{GetParam}->{'X-OTOBO-FollowUp-ArticleType'} = $Self->{Config}->{ArticleType};
 
-    # Set Article Free Field for State
+    # Set Article Free Field for State.
+    # The legacy headers X-OTOBO-FollowUp-ArticleKey<N> and X-OTOBO-FollowUp-ArticleValue<N>
+    # were removed in OTOBO 11.1, so the dynamic field is addressed directly.
     my $ArticleFreeTextNumber = $Self->{Config}->{'FreeTextState'};
-    $Param->{GetParam}->{ 'X-OTOBO-FollowUp-ArticleKey' . $ArticleFreeTextNumber }   = 'State';
-    $Param->{GetParam}->{ 'X-OTOBO-FollowUp-ArticleValue' . $ArticleFreeTextNumber } = $Self->{State};
+    $Param->{GetParam}->{ 'X-OTOBO-FollowUp-DynamicField-' . $DynamicFieldArticleTextPrefix . $ArticleFreeTextNumber } = $Self->{State};
 
     # get config object
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
@@ -526,15 +527,17 @@ sub _TicketCreate {
         # get the freetext number from config
         my $TicketFreeTextNumber = $Self->{Config}->{ 'FreeText' . $Item };
 
-        # see the Kernel::System::PostMaster::NewTicket  where this is read
-        $Param->{GetParam}->{ 'X-OTOBO-TicketKey' . $TicketFreeTextNumber }   = $Item;
-        $Param->{GetParam}->{ 'X-OTOBO-TicketValue' . $TicketFreeTextNumber } = $Self->{$Item};
+        # See Kernel::System::PostMaster::NewTicket where this is read.
+        # The legacy headers X-OTOBO-TicketKey<N> and X-OTOBO-TicketValue<N>
+        # were removed in OTOBO 11.1, so the dynamic field is addressed directly.
+        $Param->{GetParam}->{ 'X-OTOBO-DynamicField-' . $DynamicFieldTicketTextPrefix . $TicketFreeTextNumber } = $Self->{$Item};
     }
 
-    # Set Article Free Field for State
+    # Set Article Free Field for State.
+    # The legacy headers X-OTOBO-ArticleKey<N> and X-OTOBO-ArticleValue<N>
+    # were removed in OTOBO 11.1, so the dynamic field is addressed directly.
     my $ArticleFreeTextNumber = $Self->{Config}->{'FreeTextState'};
-    $Param->{GetParam}->{ 'X-OTOBO-ArticleKey' . $ArticleFreeTextNumber }   = 'State';
-    $Param->{GetParam}->{ 'X-OTOBO-ArticleValue' . $ArticleFreeTextNumber } = $Self->{State};
+    $Param->{GetParam}->{ 'X-OTOBO-DynamicField-' . $DynamicFieldArticleTextPrefix . $ArticleFreeTextNumber } = $Self->{State};
 
     # set sender type and article type
     $Param->{GetParam}->{'X-OTOBO-SenderType'}  = $Self->{Config}->{SenderType};
