@@ -4,313 +4,325 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 15:01+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-10-05 06:42+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
+"addons/manuals/systemmonitoring-documentation/ja/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
-msgstr ""
+msgstr "Sacrifice to Sphinx"
 
 #: ../../content/index.rst:19
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../content/index.rst:20
 msgid ""
 "Basic mail interface to System Monitoring Suites. Also provides deeper "
 "integration to Nagios and Icinga2 (acknowledge on lock and check script)."
 msgstr ""
+"システム監視スイートへの基本メールインタフェース。Nagios および Icinga2 との"
+"より深い連携（ロック時の確認応答とチェックスクリプト）も提供します。"
 
 #: ../../content/index.rst:23
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../../content/index.rst:26
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../../content/index.rst:27
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../../content/index.rst:30
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../../content/index.rst:31 ../../content/index.rst:35
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../../content/index.rst:38
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../content/index.rst:41
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../content/index.rst:44
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../../content/index.rst:47
 msgid "Core::Email::PostMaster"
-msgstr ""
+msgstr "Core::Email::PostMaster"
 
 #: ../../content/index.rst:50
 msgid "PostMaster::PreFilterModule###00-SystemMonitoring"
-msgstr ""
+msgstr "PostMaster::PreFilterModule###00-SystemMonitoring"
 
 #: ../../content/index.rst:51
 msgid ""
 "Basic mail interface to System Monitoring Suites. Use this block if the "
 "filter should run BEFORE PostMasterFilter."
 msgstr ""
+"システム監視スイートへの基本メールインタフェース。フィルターを "
+"PostMasterFilter の前に実行する場合は、このブロックを使用してください。"
 
 #: ../../content/index.rst:54
 msgid "PostMaster::PreFilterModule###1-SystemMonitoring"
-msgstr ""
+msgstr "PostMaster::PreFilterModule###1-SystemMonitoring"
 
 #: ../../content/index.rst:55
 msgid ""
 "Basic mail interface to System Monitoring Suites. Use this block if the "
 "filter should run AFTER PostMasterFilter."
 msgstr ""
+"システム監視スイートへの基本メールインタフェース。フィルターを "
+"PostMasterFilter の後に実行する場合は、このブロックを使用してください。"
 
 #: ../../content/index.rst:58
 msgid "Core::Event::Icinga2"
-msgstr ""
+msgstr "Core::Event::Icinga2"
 
 #: ../../content/index.rst:61
 msgid "Ticket::EventModulePost###9-Icinga2Acknowledge"
-msgstr ""
+msgstr "Ticket::EventModulePost###9-Icinga2Acknowledge"
 
 #: ../../content/index.rst:62
 msgid "Ticket event module to send an acknowledge to Icinga2."
-msgstr ""
+msgstr "Icinga2 に確認応答（acknowledge）を送信するチケットイベントモジュール。"
 
 #: ../../content/index.rst:65
 msgid "Core::Event::Nagios"
-msgstr ""
+msgstr "Core::Event::Nagios"
 
 #: ../../content/index.rst:68
 msgid "Ticket::EventModulePost###9-NagiosAcknowledge"
-msgstr ""
+msgstr "Ticket::EventModulePost###9-NagiosAcknowledge"
 
 #: ../../content/index.rst:69
 msgid "Ticket event module to send an acknowledge to Nagios."
-msgstr ""
+msgstr "Nagios に確認応答（acknowledge）を送信するチケットイベントモジュール。"
 
 #: ../../content/index.rst:72
 msgid "Core::SystemMonitoring"
-msgstr ""
+msgstr "Core::SystemMonitoring"
 
 #: ../../content/index.rst:75
 msgid "SystemMonitoring::SetIncidentState"
-msgstr ""
+msgstr "SystemMonitoring::SetIncidentState"
 
 #: ../../content/index.rst:76
 msgid ""
 "Set the incident state of a CI automatically when a system monitoring "
 "email arrives."
-msgstr ""
+msgstr "システム監視メールの受信時に、CI のインシデント状況を自動的に設定します。"
 
 #: ../../content/index.rst:79
 msgid "SystemMonitoring::LinkTicketWithCI"
-msgstr ""
+msgstr "SystemMonitoring::LinkTicketWithCI"
 
 #: ../../content/index.rst:80
 msgid ""
 "Link an already opened incident ticket with the affected CI. This is only"
 " possible when a subsequent system monitoring email arrives."
 msgstr ""
+"すでにオープンしているインシデントチケットを、影響を受ける CI とリンクします"
+"。これは、後続のシステム監視メールを受信した場合にのみ可能です。"
 
 #: ../../content/index.rst:83
 msgid "Core::SystemMonitoring::Icinga2"
-msgstr ""
+msgstr "Core::SystemMonitoring::Icinga2"
 
 #: ../../content/index.rst:86
 msgid "Icinga2::Acknowledge::Enabled"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Enabled"
 
 #: ../../content/index.rst:87
 msgid "Icinga2 acknowledgement enabled?"
-msgstr ""
+msgstr "Icinga2 の確認応答を有効にしますか？"
 
 #: ../../content/index.rst:90
 msgid "Icinga2::Acknowledge::FreeField::Host"
-msgstr ""
+msgstr "Icinga2::Acknowledge::FreeField::Host"
 
 #: ../../content/index.rst:91 ../../content/index.rst:134
 msgid "Name of the Dynamic Field for Host."
-msgstr ""
+msgstr "ホスト用のダイナミックフィールドの名前。"
 
 #: ../../content/index.rst:94
 msgid "Icinga2::Acknowledge::FreeField::Service"
-msgstr ""
+msgstr "Icinga2::Acknowledge::FreeField::Service"
 
 #: ../../content/index.rst:95 ../../content/index.rst:138
 msgid "Name of the Dynamic Field for Service."
-msgstr ""
+msgstr "サービス用のダイナミックフィールドの名前。"
 
 #: ../../content/index.rst:98
 msgid "Icinga2::Acknowledge::HTTP::URL"
-msgstr ""
+msgstr "Icinga2::Acknowledge::HTTP::URL"
 
 #: ../../content/index.rst:99
 msgid "Icinga API URL."
-msgstr ""
+msgstr "Icinga API の URL。"
 
 #: ../../content/index.rst:102
 msgid "Icinga2::Acknowledge::HTTP::User"
-msgstr ""
+msgstr "Icinga2::Acknowledge::HTTP::User"
 
 #: ../../content/index.rst:103 ../../content/index.rst:158
 msgid "The HTTP acknowledge user."
-msgstr ""
+msgstr "HTTP 確認応答のユーザー。"
 
 #: ../../content/index.rst:106
 msgid "Icinga2::Acknowledge::HTTP::Password"
-msgstr ""
+msgstr "Icinga2::Acknowledge::HTTP::Password"
 
 #: ../../content/index.rst:107 ../../content/index.rst:162
 msgid "The HTTP acknowledge password."
-msgstr ""
+msgstr "HTTP 確認応答のパスワード。"
 
 #: ../../content/index.rst:110
 msgid "Icinga2::Acknowledge::Author"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Author"
 
 #: ../../content/index.rst:111
 msgid "Icinga2 acknowledgement author."
-msgstr ""
+msgstr "Icinga2 の確認応答の作成者。"
 
 #: ../../content/index.rst:114
 msgid "Icinga2::Acknowledge::Comment"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Comment"
 
 #: ../../content/index.rst:115
 msgid "Icinga2 acknowledgement comment."
-msgstr ""
+msgstr "Icinga2 の確認応答のコメント。"
 
 #: ../../content/index.rst:118
 msgid "Icinga2::Acknowledge::Sticky"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Sticky"
 
 #: ../../content/index.rst:119
 msgid "Icinga2 acknowledgement sticky."
-msgstr ""
+msgstr "Icinga2 の確認応答の sticky 設定。"
 
 #: ../../content/index.rst:122
 msgid "Icinga2::Acknowledge::Notify"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Notify"
 
 #: ../../content/index.rst:123
 msgid "Icinga2 acknowledgement notify."
-msgstr ""
+msgstr "Icinga2 の確認応答の notify 設定。"
 
 #: ../../content/index.rst:126
 msgid "Core::SystemMonitoring::Nagios"
-msgstr ""
+msgstr "Core::SystemMonitoring::Nagios"
 
 #: ../../content/index.rst:129
 msgid "Nagios::Acknowledge::Type"
-msgstr ""
+msgstr "Nagios::Acknowledge::Type"
 
 #: ../../content/index.rst:130
 msgid "Define Nagios acknowledge type."
-msgstr ""
+msgstr "Nagios の確認応答のタイプを定義します。"
 
 #: ../../content/index.rst:133
 msgid "Nagios::Acknowledge::FreeField::Host"
-msgstr ""
+msgstr "Nagios::Acknowledge::FreeField::Host"
 
 #: ../../content/index.rst:137
 msgid "Nagios::Acknowledge::FreeField::Service"
-msgstr ""
+msgstr "Nagios::Acknowledge::FreeField::Service"
 
 #: ../../content/index.rst:141
 msgid "Nagios::Acknowledge::NamedPipe::Host"
-msgstr ""
+msgstr "Nagios::Acknowledge::NamedPipe::Host"
 
 #: ../../content/index.rst:142
 msgid "Named pipe acknowledge format for host."
-msgstr ""
+msgstr "ホスト用の名前付きパイプの確認応答の書式。"
 
 #: ../../content/index.rst:145
 msgid "Nagios::Acknowledge::NamedPipe::CMD"
-msgstr ""
+msgstr "Nagios::Acknowledge::NamedPipe::CMD"
 
 #: ../../content/index.rst:146
 msgid "Named pipe acknowledge command."
-msgstr ""
+msgstr "名前付きパイプの確認応答コマンド。"
 
 #: ../../content/index.rst:149
 msgid "Nagios::Acknowledge::NamedPipe::Service"
-msgstr ""
+msgstr "Nagios::Acknowledge::NamedPipe::Service"
 
 #: ../../content/index.rst:150
 msgid "Named pipe acknowledge format for service."
-msgstr ""
+msgstr "サービス用の名前付きパイプの確認応答の書式。"
 
 #: ../../content/index.rst:153
 msgid "Nagios::Acknowledge::HTTP::URL"
-msgstr ""
+msgstr "Nagios::Acknowledge::HTTP::URL"
 
 #: ../../content/index.rst:154
 msgid "The HTTP acknowledge URL."
-msgstr ""
+msgstr "HTTP 確認応答の URL。"
 
 #: ../../content/index.rst:157
 msgid "Nagios::Acknowledge::HTTP::User"
-msgstr ""
+msgstr "Nagios::Acknowledge::HTTP::User"
 
 #: ../../content/index.rst:161
 msgid "Nagios::Acknowledge::HTTP::Password"
-msgstr ""
+msgstr "Nagios::Acknowledge::HTTP::Password"
 
 #: ../../content/index.rst:165
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../../content/index.rst:168
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../../content/index.rst:169
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:170
 msgid "Email: hello@otobo.de"
-msgstr ""
+msgstr "メール: hello@otobo.de"
 
 #: ../../content/index.rst:171
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:174
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../../content/index.rst:175
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
-
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
