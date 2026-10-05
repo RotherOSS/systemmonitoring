@@ -8,310 +8,308 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 15:01+0200\n"
+"POT-Creation-Date: 2026-07-13 12:09+0000\n"
 "PO-Revision-Date: 2026-07-13 12:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/systemmonitoring-documentation/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: ../../content/index.rst:16
-msgid "Sacrifice to Sphinx"
-msgstr ""
+#: ../content/index.rst:5
+#, fuzzy
+#| msgid "Contact"
+msgid "Contents"
+msgstr "Kapcsolat"
 
-#: ../../content/index.rst:19
+#: ../content/index.rst:10
 msgid "Description"
 msgstr "Leírás"
 
-#: ../../content/index.rst:20
+#: ../content/index.rst:11
 msgid ""
 "Basic mail interface to System Monitoring Suites. Also provides deeper "
 "integration to Nagios and Icinga2 (acknowledge on lock and check script)."
 msgstr ""
 
-#: ../../content/index.rst:23
+#: ../content/index.rst:14
 msgid "System requirements"
 msgstr "Rendszerkövetelmények"
 
-#: ../../content/index.rst:26
+#: ../content/index.rst:17
 msgid "Framework"
 msgstr "Keretrendszer"
 
-#: ../../content/index.rst:27
-msgid "OTOBO 11.0.x"
+#: ../content/index.rst:18
+#, fuzzy
+#| msgid "OTOBO 11.0.x"
+msgid "OTOBO 11.1.x"
 msgstr "OTOBO 11.0.x"
 
-#: ../../content/index.rst:30
+#: ../content/index.rst:21
 msgid "Packages"
 msgstr "Csomagok"
 
-#: ../../content/index.rst:31 ../../content/index.rst:35
+#: ../content/index.rst:22 ../content/index.rst:26
 msgid "\\-"
 msgstr "\\-"
 
-#: ../../content/index.rst:34
+#: ../content/index.rst:25
 msgid "Third-party software"
 msgstr "Harmadik féltől származó szoftverek"
 
-#: ../../content/index.rst:38
+#: ../content/index.rst:29
 msgid "Usage"
 msgstr "Használat"
 
-#: ../../content/index.rst:41
+#: ../content/index.rst:32
 msgid "Setup"
 msgstr "Beállítás"
 
-#: ../../content/index.rst:44
+#: ../content/index.rst:35
 msgid "Configuration Reference"
 msgstr "Beállítások hivatkozása"
 
-#: ../../content/index.rst:47
+#: ../content/index.rst:38
 msgid "Core::Email::PostMaster"
 msgstr ""
 
-#: ../../content/index.rst:50
+#: ../content/index.rst:41
 msgid "PostMaster::PreFilterModule###00-SystemMonitoring"
 msgstr ""
 
-#: ../../content/index.rst:51
+#: ../content/index.rst:42 ../content/index.rst:46
 msgid ""
 "Basic mail interface to System Monitoring Suites. Use this block if the "
 "filter should run BEFORE PostMasterFilter."
 msgstr ""
 
-#: ../../content/index.rst:54
+#: ../content/index.rst:45
 msgid "PostMaster::PreFilterModule###1-SystemMonitoring"
 msgstr ""
 
-#: ../../content/index.rst:55
-msgid ""
-"Basic mail interface to System Monitoring Suites. Use this block if the "
-"filter should run AFTER PostMasterFilter."
-msgstr ""
-
-#: ../../content/index.rst:58
+#: ../content/index.rst:49
 msgid "Core::Event::Icinga2"
 msgstr ""
 
-#: ../../content/index.rst:61
+#: ../content/index.rst:52
 msgid "Ticket::EventModulePost###9-Icinga2Acknowledge"
 msgstr ""
 
-#: ../../content/index.rst:62
+#: ../content/index.rst:53
 msgid "Ticket event module to send an acknowledge to Icinga2."
 msgstr ""
 
-#: ../../content/index.rst:65
+#: ../content/index.rst:56
 msgid "Core::Event::Nagios"
 msgstr ""
 
-#: ../../content/index.rst:68
+#: ../content/index.rst:59
 msgid "Ticket::EventModulePost###9-NagiosAcknowledge"
 msgstr ""
 
-#: ../../content/index.rst:69
+#: ../content/index.rst:60
 msgid "Ticket event module to send an acknowledge to Nagios."
 msgstr ""
 
-#: ../../content/index.rst:72
+#: ../content/index.rst:63
 msgid "Core::SystemMonitoring"
 msgstr ""
 
-#: ../../content/index.rst:75
-msgid "SystemMonitoring::SetIncidentState"
-msgstr ""
-
-#: ../../content/index.rst:76
-msgid ""
-"Set the incident state of a CI automatically when a system monitoring "
-"email arrives."
-msgstr ""
-
-#: ../../content/index.rst:79
+#: ../content/index.rst:66
 msgid "SystemMonitoring::LinkTicketWithCI"
 msgstr ""
 
-#: ../../content/index.rst:80
+#: ../content/index.rst:67
 msgid ""
-"Link an already opened incident ticket with the affected CI. This is only"
-" possible when a subsequent system monitoring email arrives."
+"Link an already opened incident ticket with the affected CI. This is only "
+"possible when a subsequent system monitoring email arrives."
 msgstr ""
 
-#: ../../content/index.rst:83
+#: ../content/index.rst:70
+msgid "SystemMonitoring::SetIncidentState"
+msgstr ""
+
+#: ../content/index.rst:71
+msgid ""
+"Set the incident state of a CI automatically when a system monitoring email "
+"arrives."
+msgstr ""
+
+#: ../content/index.rst:74
 msgid "Core::SystemMonitoring::Icinga2"
 msgstr ""
 
-#: ../../content/index.rst:86
-msgid "Icinga2::Acknowledge::Enabled"
-msgstr ""
-
-#: ../../content/index.rst:87
-msgid "Icinga2 acknowledgement enabled?"
-msgstr ""
-
-#: ../../content/index.rst:90
-msgid "Icinga2::Acknowledge::FreeField::Host"
-msgstr ""
-
-#: ../../content/index.rst:91 ../../content/index.rst:134
-msgid "Name of the Dynamic Field for Host."
-msgstr ""
-
-#: ../../content/index.rst:94
-msgid "Icinga2::Acknowledge::FreeField::Service"
-msgstr ""
-
-#: ../../content/index.rst:95 ../../content/index.rst:138
-msgid "Name of the Dynamic Field for Service."
-msgstr ""
-
-#: ../../content/index.rst:98
-msgid "Icinga2::Acknowledge::HTTP::URL"
-msgstr ""
-
-#: ../../content/index.rst:99
-msgid "Icinga API URL."
-msgstr ""
-
-#: ../../content/index.rst:102
-msgid "Icinga2::Acknowledge::HTTP::User"
-msgstr ""
-
-#: ../../content/index.rst:103 ../../content/index.rst:158
-msgid "The HTTP acknowledge user."
-msgstr ""
-
-#: ../../content/index.rst:106
-msgid "Icinga2::Acknowledge::HTTP::Password"
-msgstr ""
-
-#: ../../content/index.rst:107 ../../content/index.rst:162
-msgid "The HTTP acknowledge password."
-msgstr ""
-
-#: ../../content/index.rst:110
+#: ../content/index.rst:77
 msgid "Icinga2::Acknowledge::Author"
 msgstr ""
 
-#: ../../content/index.rst:111
+#: ../content/index.rst:78
 msgid "Icinga2 acknowledgement author."
 msgstr ""
 
-#: ../../content/index.rst:114
+#: ../content/index.rst:81
 msgid "Icinga2::Acknowledge::Comment"
 msgstr ""
 
-#: ../../content/index.rst:115
+#: ../content/index.rst:82
 msgid "Icinga2 acknowledgement comment."
 msgstr ""
 
-#: ../../content/index.rst:118
-msgid "Icinga2::Acknowledge::Sticky"
+#: ../content/index.rst:85
+msgid "Icinga2::Acknowledge::Enabled"
 msgstr ""
 
-#: ../../content/index.rst:119
-msgid "Icinga2 acknowledgement sticky."
+#: ../content/index.rst:86
+msgid "Icinga2 acknowledgement enabled?"
 msgstr ""
 
-#: ../../content/index.rst:122
+#: ../content/index.rst:89
+msgid "Icinga2::Acknowledge::FreeField::Host"
+msgstr ""
+
+#: ../content/index.rst:90 ../content/index.rst:121
+msgid "Name of the Dynamic Field for Host."
+msgstr ""
+
+#: ../content/index.rst:93
+msgid "Icinga2::Acknowledge::FreeField::Service"
+msgstr ""
+
+#: ../content/index.rst:94 ../content/index.rst:125
+msgid "Name of the Dynamic Field for Service."
+msgstr ""
+
+#: ../content/index.rst:97
+msgid "Icinga2::Acknowledge::HTTP::Password"
+msgstr ""
+
+#: ../content/index.rst:98 ../content/index.rst:129
+msgid "The HTTP acknowledge password."
+msgstr ""
+
+#: ../content/index.rst:101
+msgid "Icinga2::Acknowledge::HTTP::URL"
+msgstr ""
+
+#: ../content/index.rst:102
+msgid "Icinga API URL."
+msgstr ""
+
+#: ../content/index.rst:105
+msgid "Icinga2::Acknowledge::HTTP::User"
+msgstr ""
+
+#: ../content/index.rst:106 ../content/index.rst:137
+msgid "The HTTP acknowledge user."
+msgstr ""
+
+#: ../content/index.rst:109
 msgid "Icinga2::Acknowledge::Notify"
 msgstr ""
 
-#: ../../content/index.rst:123
+#: ../content/index.rst:110
 msgid "Icinga2 acknowledgement notify."
 msgstr ""
 
-#: ../../content/index.rst:126
+#: ../content/index.rst:113
+msgid "Icinga2::Acknowledge::Sticky"
+msgstr ""
+
+#: ../content/index.rst:114
+msgid "Icinga2 acknowledgement sticky."
+msgstr ""
+
+#: ../content/index.rst:117
 msgid "Core::SystemMonitoring::Nagios"
 msgstr ""
 
-#: ../../content/index.rst:129
-msgid "Nagios::Acknowledge::Type"
-msgstr ""
-
-#: ../../content/index.rst:130
-msgid "Define Nagios acknowledge type."
-msgstr ""
-
-#: ../../content/index.rst:133
+#: ../content/index.rst:120
 msgid "Nagios::Acknowledge::FreeField::Host"
 msgstr ""
 
-#: ../../content/index.rst:137
+#: ../content/index.rst:124
 msgid "Nagios::Acknowledge::FreeField::Service"
 msgstr ""
 
-#: ../../content/index.rst:141
-msgid "Nagios::Acknowledge::NamedPipe::Host"
-msgstr ""
-
-#: ../../content/index.rst:142
-msgid "Named pipe acknowledge format for host."
-msgstr ""
-
-#: ../../content/index.rst:145
-msgid "Nagios::Acknowledge::NamedPipe::CMD"
-msgstr ""
-
-#: ../../content/index.rst:146
-msgid "Named pipe acknowledge command."
-msgstr ""
-
-#: ../../content/index.rst:149
-msgid "Nagios::Acknowledge::NamedPipe::Service"
-msgstr ""
-
-#: ../../content/index.rst:150
-msgid "Named pipe acknowledge format for service."
-msgstr ""
-
-#: ../../content/index.rst:153
-msgid "Nagios::Acknowledge::HTTP::URL"
-msgstr ""
-
-#: ../../content/index.rst:154
-msgid "The HTTP acknowledge URL."
-msgstr ""
-
-#: ../../content/index.rst:157
-msgid "Nagios::Acknowledge::HTTP::User"
-msgstr ""
-
-#: ../../content/index.rst:161
+#: ../content/index.rst:128
 msgid "Nagios::Acknowledge::HTTP::Password"
 msgstr ""
 
-#: ../../content/index.rst:165
+#: ../content/index.rst:132
+msgid "Nagios::Acknowledge::HTTP::URL"
+msgstr ""
+
+#: ../content/index.rst:133
+msgid "The HTTP acknowledge URL."
+msgstr ""
+
+#: ../content/index.rst:136
+msgid "Nagios::Acknowledge::HTTP::User"
+msgstr ""
+
+#: ../content/index.rst:140
+msgid "Nagios::Acknowledge::NamedPipe::CMD"
+msgstr ""
+
+#: ../content/index.rst:141
+msgid "Named pipe acknowledge command."
+msgstr ""
+
+#: ../content/index.rst:144
+msgid "Nagios::Acknowledge::NamedPipe::Host"
+msgstr ""
+
+#: ../content/index.rst:145
+msgid "Named pipe acknowledge format for host."
+msgstr ""
+
+#: ../content/index.rst:148
+msgid "Nagios::Acknowledge::NamedPipe::Service"
+msgstr ""
+
+#: ../content/index.rst:149
+msgid "Named pipe acknowledge format for service."
+msgstr ""
+
+#: ../content/index.rst:152
+msgid "Nagios::Acknowledge::Type"
+msgstr ""
+
+#: ../content/index.rst:153
+msgid "Define Nagios acknowledge type."
+msgstr ""
+
+#: ../content/index.rst:156
 msgid "About"
 msgstr "Névjegy"
 
-#: ../../content/index.rst:168
+#: ../content/index.rst:159
 msgid "Contact"
 msgstr "Kapcsolat"
 
-#: ../../content/index.rst:169
+#: ../content/index.rst:160
 msgid "Rother OSS GmbH"
 msgstr "Rother OSS GmbH"
 
-#: ../../content/index.rst:170
-msgid "Email: hello@otobo.de"
+#: ../content/index.rst:161
+msgid "Email: hello@otobo.io"
 msgstr ""
 
-#: ../../content/index.rst:171
-msgid "Web: https://otobo.de"
+#: ../content/index.rst:162
+msgid "Web: https://otobo.io"
 msgstr ""
 
-#: ../../content/index.rst:174
+#: ../content/index.rst:165
 msgid "Version"
 msgstr "Verzió"
 
-#: ../../content/index.rst:175
+#: ../content/index.rst:166
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
