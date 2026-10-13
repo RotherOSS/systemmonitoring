@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 15:01+0200\n"
-"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"PO-Revision-Date: 2026-10-13 14:41+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/manuals/systemmonitoring-documentation/hu/>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 2026.9\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
-msgstr ""
+msgstr "Áldozat a Szfinxnek"
 
 #: ../../content/index.rst:19
 msgid "Description"
@@ -34,6 +34,9 @@ msgid ""
 "Basic mail interface to System Monitoring Suites. Also provides deeper "
 "integration to Nagios and Icinga2 (acknowledge on lock and check script)."
 msgstr ""
+"Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. "
+"Mélyebb integrációt biztosít a Nagios és Icinga2 programokhoz (nyugtázás "
+"zároláskor és ellenőrző parancsfájl)."
 
 #: ../../content/index.rst:23
 msgid "System requirements"
@@ -73,21 +76,24 @@ msgstr "Beállítások hivatkozása"
 
 #: ../../content/index.rst:47
 msgid "Core::Email::PostMaster"
-msgstr ""
+msgstr "Core::Email::PostMaster"
 
 #: ../../content/index.rst:50
 msgid "PostMaster::PreFilterModule###00-SystemMonitoring"
-msgstr ""
+msgstr "PostMaster::PreFilterModule###00-SystemMonitoring"
 
 #: ../../content/index.rst:51
 msgid ""
 "Basic mail interface to System Monitoring Suites. Use this block if the "
 "filter should run BEFORE PostMasterFilter."
 msgstr ""
+"Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Akkor "
+"használja ezt a blokkot, ha a szűrőt a levelezési szűrő ELŐTT kell "
+"lefuttatni."
 
 #: ../../content/index.rst:54
 msgid "PostMaster::PreFilterModule###1-SystemMonitoring"
-msgstr ""
+msgstr "PostMaster::PreFilterModule###1-SystemMonitoring"
 
 #: ../../content/index.rst:55
 msgid ""
@@ -97,195 +103,199 @@ msgstr ""
 
 #: ../../content/index.rst:58
 msgid "Core::Event::Icinga2"
-msgstr ""
+msgstr "Core::Event::Icinga2"
 
 #: ../../content/index.rst:61
 msgid "Ticket::EventModulePost###9-Icinga2Acknowledge"
-msgstr ""
+msgstr "Ticket::EventModulePost###9-Icinga2Acknowledge"
 
 #: ../../content/index.rst:62
 msgid "Ticket event module to send an acknowledge to Icinga2."
-msgstr ""
+msgstr "Jegyesemény modul egy nyugta küldéséhez a Icinga2 számára."
 
 #: ../../content/index.rst:65
 msgid "Core::Event::Nagios"
-msgstr ""
+msgstr "Core::Event::Nagios"
 
 #: ../../content/index.rst:68
 msgid "Ticket::EventModulePost###9-NagiosAcknowledge"
-msgstr ""
+msgstr "Ticket::EventModulePost###9-NagiosAcknowledge"
 
 #: ../../content/index.rst:69
 msgid "Ticket event module to send an acknowledge to Nagios."
-msgstr ""
+msgstr "Jegyesemény modul egy nyugta küldéséhez a Nagios számára."
 
 #: ../../content/index.rst:72
 msgid "Core::SystemMonitoring"
-msgstr ""
+msgstr "Core::SystemMonitoring"
 
 #: ../../content/index.rst:75
 msgid "SystemMonitoring::SetIncidentState"
-msgstr ""
+msgstr "SystemMonitoring::SetIncidentState"
 
 #: ../../content/index.rst:76
 msgid ""
 "Set the incident state of a CI automatically when a system monitoring "
 "email arrives."
 msgstr ""
+"Egy CI incidensállapotának automatikus beállítása, amikor egy "
+"rendszerfigyelő e-mail érkezik."
 
 #: ../../content/index.rst:79
 msgid "SystemMonitoring::LinkTicketWithCI"
-msgstr ""
+msgstr "SystemMonitoring::LinkTicketWithCI"
 
 #: ../../content/index.rst:80
 msgid ""
 "Link an already opened incident ticket with the affected CI. This is only"
 " possible when a subsequent system monitoring email arrives."
 msgstr ""
+"Egy már megnyitott incidensjegy összekapcsolása az érintett CI-vel. Ez csak "
+"akkor lehetséges, amikor egy következő rendszerfigyelő e-mail érkezik."
 
 #: ../../content/index.rst:83
 msgid "Core::SystemMonitoring::Icinga2"
-msgstr ""
+msgstr "Core::SystemMonitoring::Icinga2"
 
 #: ../../content/index.rst:86
 msgid "Icinga2::Acknowledge::Enabled"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Enabled"
 
 #: ../../content/index.rst:87
 msgid "Icinga2 acknowledgement enabled?"
-msgstr ""
+msgstr "Icinga2 nyugtázás engedélyezve?"
 
 #: ../../content/index.rst:90
 msgid "Icinga2::Acknowledge::FreeField::Host"
-msgstr ""
+msgstr "Icinga2::Acknowledge::FreeField::Host"
 
 #: ../../content/index.rst:91 ../../content/index.rst:134
 msgid "Name of the Dynamic Field for Host."
-msgstr ""
+msgstr "A dinamikus mező neve a gépnél."
 
 #: ../../content/index.rst:94
 msgid "Icinga2::Acknowledge::FreeField::Service"
-msgstr ""
+msgstr "Icinga2::Acknowledge::FreeField::Service"
 
 #: ../../content/index.rst:95 ../../content/index.rst:138
 msgid "Name of the Dynamic Field for Service."
-msgstr ""
+msgstr "A dinamikus mező neve a szolgáltatásnál."
 
 #: ../../content/index.rst:98
 msgid "Icinga2::Acknowledge::HTTP::URL"
-msgstr ""
+msgstr "Icinga2::Acknowledge::HTTP::URL"
 
 #: ../../content/index.rst:99
 msgid "Icinga API URL."
-msgstr ""
+msgstr "Icinga API URL."
 
 #: ../../content/index.rst:102
 msgid "Icinga2::Acknowledge::HTTP::User"
-msgstr ""
+msgstr "Icinga2::Acknowledge::HTTP::User"
 
 #: ../../content/index.rst:103 ../../content/index.rst:158
 msgid "The HTTP acknowledge user."
-msgstr ""
+msgstr "A HTTP nyugtázási felhasználó."
 
 #: ../../content/index.rst:106
 msgid "Icinga2::Acknowledge::HTTP::Password"
-msgstr ""
+msgstr "Icinga2::Acknowledge::HTTP::Password"
 
 #: ../../content/index.rst:107 ../../content/index.rst:162
 msgid "The HTTP acknowledge password."
-msgstr ""
+msgstr "A HTTP nyugtázási jelszó."
 
 #: ../../content/index.rst:110
 msgid "Icinga2::Acknowledge::Author"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Author"
 
 #: ../../content/index.rst:111
 msgid "Icinga2 acknowledgement author."
-msgstr ""
+msgstr "Icinga2 nyugtázás szerzője."
 
 #: ../../content/index.rst:114
 msgid "Icinga2::Acknowledge::Comment"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Comment"
 
 #: ../../content/index.rst:115
 msgid "Icinga2 acknowledgement comment."
-msgstr ""
+msgstr "Icinga2 nyugtázás megjegyzése."
 
 #: ../../content/index.rst:118
 msgid "Icinga2::Acknowledge::Sticky"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Sticky"
 
 #: ../../content/index.rst:119
 msgid "Icinga2 acknowledgement sticky."
-msgstr ""
+msgstr "Icinga2 nyugtázás ragasztás."
 
 #: ../../content/index.rst:122
 msgid "Icinga2::Acknowledge::Notify"
-msgstr ""
+msgstr "Icinga2::Acknowledge::Notify"
 
 #: ../../content/index.rst:123
 msgid "Icinga2 acknowledgement notify."
-msgstr ""
+msgstr "Icinga2 nyugtázás értesítés."
 
 #: ../../content/index.rst:126
 msgid "Core::SystemMonitoring::Nagios"
-msgstr ""
+msgstr "Core::SystemMonitoring::Nagios"
 
 #: ../../content/index.rst:129
 msgid "Nagios::Acknowledge::Type"
-msgstr ""
+msgstr "Nagios::Acknowledge::Type"
 
 #: ../../content/index.rst:130
 msgid "Define Nagios acknowledge type."
-msgstr ""
+msgstr "Nagios nyugtázási típus meghatározása."
 
 #: ../../content/index.rst:133
 msgid "Nagios::Acknowledge::FreeField::Host"
-msgstr ""
+msgstr "Nagios::Acknowledge::FreeField::Host"
 
 #: ../../content/index.rst:137
 msgid "Nagios::Acknowledge::FreeField::Service"
-msgstr ""
+msgstr "Nagios::Acknowledge::FreeField::Service"
 
 #: ../../content/index.rst:141
 msgid "Nagios::Acknowledge::NamedPipe::Host"
-msgstr ""
+msgstr "Nagios::Acknowledge::NamedPipe::Host"
 
 #: ../../content/index.rst:142
 msgid "Named pipe acknowledge format for host."
-msgstr ""
+msgstr "Elnevezett cső nyugtázási formátum a géphez."
 
 #: ../../content/index.rst:145
 msgid "Nagios::Acknowledge::NamedPipe::CMD"
-msgstr ""
+msgstr "Nagios::Acknowledge::NamedPipe::CMD"
 
 #: ../../content/index.rst:146
 msgid "Named pipe acknowledge command."
-msgstr ""
+msgstr "Elnevezett cső nyugtázási parancs."
 
 #: ../../content/index.rst:149
 msgid "Nagios::Acknowledge::NamedPipe::Service"
-msgstr ""
+msgstr "Nagios::Acknowledge::NamedPipe::Service"
 
 #: ../../content/index.rst:150
 msgid "Named pipe acknowledge format for service."
-msgstr ""
+msgstr "Elnevezett cső nyugtázási formátum a szolgáltatáshoz."
 
 #: ../../content/index.rst:153
 msgid "Nagios::Acknowledge::HTTP::URL"
-msgstr ""
+msgstr "Nagios::Acknowledge::HTTP::URL"
 
 #: ../../content/index.rst:154
 msgid "The HTTP acknowledge URL."
-msgstr ""
+msgstr "A HTTP nyugtázási URL."
 
 #: ../../content/index.rst:157
 msgid "Nagios::Acknowledge::HTTP::User"
-msgstr ""
+msgstr "Nagios::Acknowledge::HTTP::User"
 
 #: ../../content/index.rst:161
 msgid "Nagios::Acknowledge::HTTP::Password"
-msgstr ""
+msgstr "Nagios::Acknowledge::HTTP::Password"
 
 #: ../../content/index.rst:165
 msgid "About"
@@ -301,11 +311,11 @@ msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:170
 msgid "Email: hello@otobo.de"
-msgstr ""
+msgstr "E-mail: hello@otobo.de"
 
 #: ../../content/index.rst:171
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:174
 msgid "Version"
