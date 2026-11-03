@@ -14,7 +14,9 @@ msgstr ""
 "X-Generator: Weblate 2026.9\n"
 
 #. SysConfig
-msgid "Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter."
+msgid ""
+"Basic mail interface to System Monitoring Suites. Use this block if the "
+"filter should run BEFORE PostMasterFilter."
 msgstr ""
 "システム監視スイートへの基本メールインタフェース。フィルターを "
 "PostMasterFilter の前に実行する場合は、このブロックを使用してください。"
@@ -52,10 +54,12 @@ msgid "Icinga2 acknowledgement sticky."
 msgstr "Icinga2 の確認応答の sticky 設定。"
 
 #. SysConfig
-msgid "Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives."
+msgid ""
+"Link an already opened incident ticket with the affected CI. This is only "
+"possible when a subsequent system monitoring email arrives."
 msgstr ""
-"すでにオープンしているインシデントチケットを、影響を受ける CI とリンクします"
-"。これは、後続のシステム監視メールを受信した場合にのみ可能です。"
+"すでにオープンしているインシデントチケットを、影響を受ける CI とリンクしま"
+"す。これは、後続のシステム監視メールを受信した場合にのみ可能です。"
 
 #. SysConfig
 msgid "Name of the Dynamic Field for Host."
@@ -78,8 +82,11 @@ msgid "Named pipe acknowledge format for service."
 msgstr "サービス用の名前付きパイプの確認応答の書式。"
 
 #. SysConfig
-msgid "Set the incident state of a CI automatically when a system monitoring email arrives."
-msgstr "システム監視メールの受信時に、CI のインシデント状況を自動的に設定します。"
+msgid ""
+"Set the incident state of a CI automatically when a system monitoring email "
+"arrives."
+msgstr ""
+"システム監視メールの受信時に、CI のインシデント状況を自動的に設定します。"
 
 #. SysConfig
 msgid "The HTTP acknowledge URL."
@@ -95,7 +102,8 @@ msgstr "HTTP 確認応答のユーザー。"
 
 #. SysConfig
 msgid "Ticket event module to send an acknowledge to Icinga2."
-msgstr "Icinga2 に確認応答（acknowledge）を送信するチケットイベントモジュール。"
+msgstr ""
+"Icinga2 に確認応答（acknowledge）を送信するチケットイベントモジュール。"
 
 #. SysConfig
 msgid "Ticket event module to send an acknowledge to Nagios."
